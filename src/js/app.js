@@ -20,7 +20,6 @@ $(document).ready(function () {
         let parsedCode = esprima.parseScript(codeToParse);
 
         let nodesParsedCode = parseStringNodes(parsedCode, vector);
-        alert(nodesParsedCode);
         let diagramOptions = getDiagramOptions();
         let myDiagram = flowchart.parse(nodesParsedCode);
         myDiagram.drawSVG(myDiagram, diagramOptions);
